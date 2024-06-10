@@ -9,7 +9,7 @@ async function init() {
     try {
         // Initialize Puppeteer with a specified window size
         browser = await puppeteer.launch({
-            headless: false,
+            headless: true,
             args: ['--start-maximized']  // this will open the browser in maximized mode
         });
         const pages = await browser.pages();
